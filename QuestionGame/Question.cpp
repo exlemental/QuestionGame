@@ -14,8 +14,20 @@ Question::Question(std::string identifier,
                    unsigned int answer)
 : identifier(identifier), name(name), options(options), answer(answer)
 {
-    //  Propagate error if answer number exceeds number of questions provided (semantic analysis).
+    //  Propagate error if answer number exceeds number of questions provided (semantic analysis)
     if (answer >= options.size()) {
         throw OptionNumberExceededException("Invalid option number.");
     }
+}
+
+unsigned int
+Question::viewCount() const noexcept
+{
+    return stats.trueCount + stats.falseCount + stats.missedCount;
+}
+
+float
+Question::correctness() const noexcept
+{
+    return stats.trueCount / (viewCount());
 }

@@ -10,6 +10,7 @@
 		0C3D92721CD12ED000A80340 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C3D92711CD12ED000A80340 /* main.cpp */; };
 		0C3D927A1CD12F8300A80340 /* Question.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C3D92781CD12F8300A80340 /* Question.cpp */; };
 		0C3D927D1CD130A300A80340 /* OptionNumberExceededException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C3D927B1CD130A300A80340 /* OptionNumberExceededException.cpp */; };
+		0C3D92811CD1319E00A80340 /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C3D927F1CD1319E00A80340 /* User.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		0C3D92791CD12F8300A80340 /* Question.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Question.hpp; sourceTree = "<group>"; };
 		0C3D927B1CD130A300A80340 /* OptionNumberExceededException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OptionNumberExceededException.cpp; sourceTree = "<group>"; };
 		0C3D927C1CD130A300A80340 /* OptionNumberExceededException.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OptionNumberExceededException.hpp; sourceTree = "<group>"; };
+		0C3D927F1CD1319E00A80340 /* User.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = User.cpp; sourceTree = "<group>"; };
+		0C3D92801CD1319E00A80340 /* User.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = User.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				0C3D92711CD12ED000A80340 /* main.cpp */,
+				0C3D92821CD131A900A80340 /* Model */,
 				0C3D927E1CD130A900A80340 /* Error Handling */,
-				0C3D92781CD12F8300A80340 /* Question.cpp */,
-				0C3D92791CD12F8300A80340 /* Question.hpp */,
 			);
 			path = QuestionGame;
 			sourceTree = "<group>";
@@ -78,6 +80,17 @@
 				0C3D927C1CD130A300A80340 /* OptionNumberExceededException.hpp */,
 			);
 			name = "Error Handling";
+			sourceTree = "<group>";
+		};
+		0C3D92821CD131A900A80340 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C3D92781CD12F8300A80340 /* Question.cpp */,
+				0C3D92791CD12F8300A80340 /* Question.hpp */,
+				0C3D927F1CD1319E00A80340 /* User.cpp */,
+				0C3D92801CD1319E00A80340 /* User.hpp */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C3D92811CD1319E00A80340 /* User.cpp in Sources */,
 				0C3D92721CD12ED000A80340 /* main.cpp in Sources */,
 				0C3D927D1CD130A300A80340 /* OptionNumberExceededException.cpp in Sources */,
 				0C3D927A1CD12F8300A80340 /* Question.cpp in Sources */,
@@ -229,6 +243,7 @@
 		0C3D92761CD12ED000A80340 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -236,6 +251,7 @@
 		0C3D92771CD12ED000A80340 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

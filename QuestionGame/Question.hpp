@@ -16,6 +16,12 @@
 
 class Question {
 public:
+    struct AnswerCount {
+        unsigned int trueCount = 0;
+        unsigned int falseCount = 0;
+        unsigned int missedCount = 0;
+    };
+    
     Question(std::string identifier, std::string name, std::vector<std::string> options, unsigned int answer);
     
     std::string identifier;
@@ -23,6 +29,10 @@ public:
     std::string name;
     std::vector<std::string> options;
     unsigned int answer;
+    AnswerCount stats;
+    
+    unsigned int viewCount() const noexcept;
+    float correctness() const noexcept;
 };
 
 #endif /* Question_hpp */
