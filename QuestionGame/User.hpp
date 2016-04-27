@@ -9,6 +9,19 @@
 #ifndef User_hpp
 #define User_hpp
 
-#include <stdio.h>
+#include <iostream>
+
+#include "Human.hpp"
+
+class User : public Human {
+public:
+    User();
+    
+    std::string username;
+    std::string password;
+    
+    std::string email;
+    bool verified = false;
+};
 
 #endif /* User_hpp */

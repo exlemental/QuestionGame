@@ -11,6 +11,7 @@
 		0C3D927A1CD12F8300A80340 /* Question.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C3D92781CD12F8300A80340 /* Question.cpp */; };
 		0C3D927D1CD130A300A80340 /* OptionNumberExceededException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C3D927B1CD130A300A80340 /* OptionNumberExceededException.cpp */; };
 		0C3D92811CD1319E00A80340 /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C3D927F1CD1319E00A80340 /* User.cpp */; };
+		0C3D92851CD1367300A80340 /* Human.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C3D92831CD1367300A80340 /* Human.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		0C3D927C1CD130A300A80340 /* OptionNumberExceededException.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OptionNumberExceededException.hpp; sourceTree = "<group>"; };
 		0C3D927F1CD1319E00A80340 /* User.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = User.cpp; sourceTree = "<group>"; };
 		0C3D92801CD1319E00A80340 /* User.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = User.hpp; sourceTree = "<group>"; };
+		0C3D92831CD1367300A80340 /* Human.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Human.cpp; sourceTree = "<group>"; };
+		0C3D92841CD1367300A80340 /* Human.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Human.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				0C3D92791CD12F8300A80340 /* Question.hpp */,
 				0C3D927F1CD1319E00A80340 /* User.cpp */,
 				0C3D92801CD1319E00A80340 /* User.hpp */,
+				0C3D92831CD1367300A80340 /* Human.cpp */,
+				0C3D92841CD1367300A80340 /* Human.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 				0C3D92721CD12ED000A80340 /* main.cpp in Sources */,
 				0C3D927D1CD130A300A80340 /* OptionNumberExceededException.cpp in Sources */,
 				0C3D927A1CD12F8300A80340 /* Question.cpp in Sources */,
+				0C3D92851CD1367300A80340 /* Human.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
